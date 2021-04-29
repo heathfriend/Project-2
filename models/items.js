@@ -1,25 +1,13 @@
-const items = [
-    {
-        brand: 'Titleist',
-        irons: 'AP3',
-        flex: 'stiff',
-        price: 1300,
-        inStock: true
-    },
-    {
-        brand: 'Taylormade',
-        irons: 'P790',
-        flex: 'stiff',
-        price: 1400,
-        inStock: false
-    },
-    {
-        brand: 'Ping',
-        irons: 'G710',
-        flex: 'stiff',
-        price: 1300,
-        inStock: true
-    }
-];
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
 
-module.exports = items;
+const clubSchema = Schema({
+    Brand: {type: String},
+    Irons:{type: String},
+    Flex: {type: String},
+    Price:{type: Number}
+})
+
+const Club = mongoose.model('Club', clubSchema )
+
+module.exports = Club;

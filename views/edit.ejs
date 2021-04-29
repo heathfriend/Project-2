@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>Edit Items Page</h1>
+
+        <form action="/items/
+        <%=index%>?_method=PUT" method="POST">
+
+        Brand: <input type="text" name="Brand"/><br/>
+        Irons: <input type="text" name="Irons"/><br/>
+        Flex:  <input type="text" name="Flex"/><br/>
+        Price: <input type="number" name="Price" /><br/>
+        <input type="submit" value="Complete Edit"/>
+
+        </form>
+    </body>
+</html>
