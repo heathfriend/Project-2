@@ -41,12 +41,22 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 // Routes
 //___________________
 //localhost:3000
+//////INDEX///////
 app.get('/items' , (req, res) => {
   res.render('index.ejs',
   {
       allItems:items
   });
 });
+///////SHOW/////
+app.get('/items/:indexOfItemsArray', (req, res) => {
+    res.render(
+        'show.ejs',
+        {
+            item:items[req.params.indexOfItemsArray]
+        }
+    )
+})
 //___________________
 //Listener
 //___________________

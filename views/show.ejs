@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+
+        <h1>Show Page</h1>
+
+        <%= item.brand%>: $<%=item.price %>
+
+        <% if(item.inStock === true){ %>
+        <% } else { %>
+            <br/>Out of Stock
+        <% } %>
+
+    </body>
+</html>
