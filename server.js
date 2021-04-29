@@ -7,6 +7,7 @@ const mongoose = require ('mongoose');
 const app = express ();
 const db = mongoose.connection;
 require('dotenv').config()
+const items = require('./models/items.js')
 //___________________
 //Port
 //___________________
@@ -40,8 +41,11 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 // Routes
 //___________________
 //localhost:3000
-app.get('/' , (req, res) => {
-  res.send('Hello World!');
+app.get('/items' , (req, res) => {
+  res.render('index.ejs',
+  {
+      allItems:items
+  });
 });
 //___________________
 //Listener
