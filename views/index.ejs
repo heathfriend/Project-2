@@ -8,11 +8,11 @@
     </head>
     <body>
         <h1>Inventory</h1>
-        <ul id="">
+
+        <ul>
             <% for(let i = 0; i < items.length; i++) { %>
                 <li>
-                    <a href="/items/<%=items[i].id%>"><%=items[i].Brand%>
-                    </a>
+                    <div class="card">
 
                     <img src="<%=items[i].Img%>"/>
 
@@ -21,7 +21,10 @@
 
                     </form>
 
-                    <br/><a href="/items/<%=items[i].id%>/edit">Edit Items</a>
+                    <br/><button><a href="/items/<%=items[i].id%>/edit">Edit Items</a></button>
+
+                    <h4><a href="/items/<%=items[i].id%>"><%=items[i].Brand%>
+                    </a></h4>
                 </li>
 
             <% } %>
@@ -31,5 +34,6 @@
 
 
         </ul>
+        </div>
     </body>
 </html>

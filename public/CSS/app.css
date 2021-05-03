@@ -8,6 +8,7 @@ h1 {
     color: Blue;
     border-radius: 25px;
     background: white;
+    font-family: sans-serif;
 }
 
 img {
@@ -18,10 +19,22 @@ img {
 }
 
 li {
-    display: block;
+    display: inline-block;
 }
 
 ul {
     display: inline-block;
     flex-direction: row;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    max-width: 200px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    overflow: auto;
 }
