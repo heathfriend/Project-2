@@ -35,13 +35,12 @@ item.delete('/items/:id',
 
 /////CREATE//////
 item.post('/items', (req, res) => {
+    if(req.body.inStock === 'on'){
+        req.body.inStock = true
+    } else {
+        req.body.inStock = false
+    }
     Items.create(req.body, (err, created) => {
-        if(req.body.inStock === 'on'){
-            req.body.inStock = true
-        } else {
-            req.body.inStock = false
-        }
-        items.push(req.body)
         res.redirect('/items')
 })
 

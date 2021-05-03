@@ -1,0 +1,27 @@
+body{
+    background-color: #b1dae7
+}
+
+h1 {
+    border: 2px solid black;
+    text-align: center;
+    color: Blue;
+    border-radius: 25px;
+    background: white;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    display: inline;
+    flex-wrap: wrap;
+}
+
+li {
+    display: block;
+}
+
+ul {
+    display: inline-block;
+    flex-direction: row;
+}

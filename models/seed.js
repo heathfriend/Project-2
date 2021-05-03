@@ -3,6 +3,7 @@ module.exports = [
     {
         Brand: 'Titleist',
         Irons: 'AP3',
+        Img: "https://imgur.com/hr6IHnv",
         Flex: 'stiff',
         Price: 1300,
         inStock: true,
@@ -17,7 +18,8 @@ module.exports = [
     {
         Brand: 'Ping',
         Irons: 'G710',
-        Flex: 'stiff',
+        Img: "https://i.imgur.com/lwyNGn1.jpeg",
+        Flex:'stiff',
         Price: 1300,
         inStock: true
     }

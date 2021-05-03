@@ -2,15 +2,20 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+
         <title></title>
+        <link rel="stylesheet" href="./CSS/app.css">
     </head>
     <body>
-        <h1>Index Page</h1>
-        <ul>
+        <h1>Inventory</h1>
+        <ul id="">
             <% for(let i = 0; i < items.length; i++) { %>
                 <li>
                     <a href="/items/<%=items[i].id%>"><%=items[i].Brand%>
                     </a>
+
+                    <img src="<%=items[i].Img%>">
+
                     <form action="/items/<%=items[i].id%>?_method=DELETE" method="POST">
                         <input type="submit" value="DELETE"/>
 

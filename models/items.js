@@ -3,6 +3,7 @@ const Schema = mongoose.Schema
 
 const clubSchema = Schema({
     Brand: {type: String},
+    img: {type: String},
     Irons:{type: String},
     Flex: {type: String},
     Price:{type: Number}
