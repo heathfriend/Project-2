@@ -16,6 +16,7 @@ item.get('/items/new', (req, res) => {
 //////INDEX///////
 item.get('/items' , (req, res) => {
     Items.find({}, (err, allItems) => {
+        console.log(allItems);
         res.render('index.ejs',
         {
            items:allItems
